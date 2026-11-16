@@ -1,0 +1,6 @@
+{
+  "name": "ClearVolt — 실시간 전기 시세 전력 시장 대시보드",
+  "description": "한국 전력 시장 SMP·REC 실시간 시세, 시간대별 가격 곡선, 전력 수급 현황 및 전기 절약·태양광 수익 계산기를 제공하는 대시보드",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

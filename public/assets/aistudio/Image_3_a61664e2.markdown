@@ -1,0 +1,208 @@
+---
+name: ClearVolt
+colors:
+  surface: '#f8f9ff'
+  surface-dim: '#cbdbf5'
+  surface-bright: '#f8f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eff4ff'
+  surface-container: '#e5eeff'
+  surface-container-high: '#dce9ff'
+  surface-container-highest: '#d3e4fe'
+  on-surface: '#0b1c30'
+  on-surface-variant: '#434655'
+  inverse-surface: '#213145'
+  inverse-on-surface: '#eaf1ff'
+  outline: '#747686'
+  outline-variant: '#c4c5d7'
+  surface-tint: '#2151da'
+  primary: '#0037b0'
+  on-primary: '#ffffff'
+  primary-container: '#1d4ed8'
+  on-primary-container: '#cad3ff'
+  inverse-primary: '#b7c4ff'
+  secondary: '#006591'
+  on-secondary: '#ffffff'
+  secondary-container: '#39b8fd'
+  on-secondary-container: '#004666'
+  tertiary: '#004f35'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#006a48'
+  on-tertiary-container: '#60eeb1'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#dce1ff'
+  primary-fixed-dim: '#b7c4ff'
+  on-primary-fixed: '#001551'
+  on-primary-fixed-variant: '#0039b5'
+  secondary-fixed: '#c9e6ff'
+  secondary-fixed-dim: '#89ceff'
+  on-secondary-fixed: '#001e2f'
+  on-secondary-fixed-variant: '#004c6e'
+  tertiary-fixed: '#6ffbbe'
+  tertiary-fixed-dim: '#4edea3'
+  on-tertiary-fixed: '#002113'
+  on-tertiary-fixed-variant: '#005236'
+  background: '#f8f9ff'
+  on-background: '#0b1c30'
+  surface-variant: '#d3e4fe'
+typography:
+  display-lg:
+    fontFamily: Inter
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Inter
+    fontSize: 26px
+    fontWeight: '700'
+    lineHeight: 34px
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Inter
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Inter
+    fontSize: 17px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: -0.005em
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+  label-lg:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+  label-md:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.01em
+  label-sm:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.02em
+  stat-display:
+    fontFamily: Inter
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 34px
+    letterSpacing: -0.02em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 0.75rem
+  margin: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system is tailored for an approachable, high-trust Korean energy market electricity price dashboard on mobile web. The brand personality balances financial clarity, institutional dependability, and approachable consumer guidance. It demystifies fluctuating spot prices (SMP - System Marginal Price, REC - Renewable Energy Certificate) for newcomers, solar micro-generators, and general power consumers.
+
+The visual style blends **Corporate / Modern FinTech** with **Soft Utility Minimalism**:
+- **Clarity Over Complexity:** Technical market metrics are translated into intuitive visual statuses (e.g., "Low / Stable / High" color-coded badges) alongside numeric figures.
+- **Airy, Crisp Canvas:** Expansive clean surfaces reduce visual noise and fatigue.
+- **Electric Precision:** Vivid electric blue accents draw the eye to critical real-time action items and active tracking curves without feeling alarming.
+- **Friendly Financial Trust:** Generous card padding, gentle edge curvature, and clean typographic rhythms invite exploration without intimidation.
+
+## Colors
+
+The color palette centers on crisp light surfaces with high-energy electric blues that signal vitality, stability, and technological speed:
+
+- **Primary (`#1d4ed8`)**: Royal Electric Blue used for key price indicators, active interactive states, primary action buttons, and dominant graph trends.
+- **Secondary (`#0ea5e9`)**: Sky Blue used for informational callouts, comparative benchmark charts, and secondary selection badges.
+- **Tertiary (`#10b981`)**: Renewable Green indicating solar generation surpluses, off-peak savings, and eco-positive market trends.
+- **Neutral (`#64748b`)**: Slate gray scale providing balanced typography hierarchy and subtle UI boundaries.
+- **Canvas Base**: Pure white (`#ffffff`) for foreground cards and sheet surfaces; ultra-soft slate (`#f8fafc`) for base page backdrops.
+- **Semantic Accents**: Amber (`#f59e0b`) for moderate price surges; Coral Red (`#ef4444`) strictly reserved for peak price alerts and critical system warnings.
+
+## Typography
+
+The typography system relies on **Inter** (pairing smoothly with Pretendard in multi-language Korean/English environments) to provide clean geometric construction and high legibility across mobile screens:
+
+- **Tabular Figures:** Numbers in pricing cards, hourly SMP charts, and percentage differences must employ tabular lining figures (`font-variant-numeric: tabular-nums`) to prevent layout shifts during live data ticks.
+- **Korean Typographic Balance:** Korean headers (한글 제목) use tighter letter-spacing (`-0.01em` to `-0.02em`) to maintain cohesion and prevent loose spacing artifacts.
+- **Hierarchy:** High-impact metric summaries use `stat-display` for instant grasp of prices per kilowatt-hour (원/kWh), paired directly with `label-md` unit tags.
+
+## Layout & Spacing
+
+The layout is built mobile-first, targeting modern mobile viewport widths (360px–430px) while adapting cleanly to tablet dashboards:
+
+- **Mobile Viewport Grid:** A 4-column fluid layout with an outer horizontal margin of `1rem` (16px) and column gutters of `0.75rem` (12px).
+- **Tablet & Expandable Views:** Scales to 8 columns at 768px with `1.5rem` margins, enabling side-by-side market comparison charts.
+- **Vertical Spacing Rhythm:** Component interiors adhere to an 8px scale. Dense data rows within cards use `space-sm` (8px), while distinct dashboard metric widgets use `space-md` (16px) to `space-lg` (24px) separation to avoid cognitive overload.
+
+## Elevation & Depth
+
+Visual hierarchy employs **Low-Contrast Outlines paired with Soft Ambient Tonal Elevation**, avoiding harsh shadows in favor of crisp daylight clarity:
+
+- **Level 0 (Canvas Base):** Background canvas rendered in `#f8fafc`.
+- **Level 1 (Surface Cards & Panels):** Solid `#ffffff` background with a subtle border (`1px solid #e2e8f0`). Shadow: `0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03)`.
+- **Level 2 (Active Cards & Floating Menus):** Pure white background with border (`1px solid #cbd5e1`) and an ambient diffused shadow: `0 8px 24px -4px rgba(29, 78, 216, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04)`.
+- **Level 3 (Modal Sheets & Snackbars):** Elevated bottom sheets use `0 16px 32px -8px rgba(15, 23, 42, 0.14)` over a semi-transparent dark backdrop blur (`rgba(15, 23, 42, 0.4)` with 4px backdrop blur).
+
+## Shapes
+
+The design uses **Roundedness Level 2 (Rounded)**:
+- Standard elements (buttons, inputs, metric cells): `0.5rem` (8px).
+- Surface cards and interactive modular panels: `rounded-lg` at `1rem` (16px).
+- Floating action buttons, bottom utility sheets, and primary spotlight banners: `rounded-xl` at `1.5rem` (24px).
+- Pill shapes (`rounded-full` / 9999px) are strictly used for market status chips, time interval toggles (1H, 24H, 7D, 1M), and trend indicator pills.
+
+## Components
+
+### Buttons
+- **Primary:** Background `#1d4ed8`, text `#ffffff`, border-radius `0.5rem`, height `48px` (mobile touch target). Subtle hover/active brightness shift to `#1e40af`.
+- **Secondary / Ghost:** White background, `1px solid #cbd5e1`, text `#1e293b`.
+- **Icon Buttons:** `40x40px` touch areas with centered iconography for alerts, info popups, and refreshing rates.
+
+### Chips & Badges
+- **Status Chips:** Pill-shaped tags (`rounded-full`) with light tonal backgrounds. 
+  - Off-peak / Cheap: `#ecfdf5` background, `#059669` text.
+  - Normal / Mid: `#eff6ff` background, `#1d4ed8` text.
+  - Peak / Expensive: `#fef2f2` background, `#dc2626` text.
+- **Time-Range Switcher:** Segmented control container with `#f1f5f9` fill and `0.5rem` rounded corners. Active state features a pure white pill with soft elevation.
+
+### Cards
+- **Market Metric Card:** Features a top row with label and explanation tooltip icon, a prominent price figure (`stat-display`), and a percentage delta badge showing movement compared to yesterday's average.
+- **Hourly Price Curve Card:** White canvas housing an interactive lightweight SVG/Canvas sparkline chart, touch scrub bar, and current selected-hour floating readout.
+
+### Input Fields & Controls
+- **Inputs:** Height `48px`, background `#ffffff`, border `1px solid #cbd5e1`, focus border `2px solid #1d4ed8`.
+- **Checkboxes & Radios:** `20x20px` with `#1d4ed8` fill on checked states and white checkmark icon.
+
+### Price Alert Banner (Beginner Feature)
+- Dedicated banner explaining current price context in simple conversational Korean ("현재 시간대는 전력 수요가 낮아 평소보다 18% 저렴합니다"). Soft electric-blue tint background (`#eff6ff`), electric blue left border accent (4px), and clear body text.

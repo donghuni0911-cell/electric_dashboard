@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Plus Jakarta Sans", "Pretendard", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-surface: #f8f9ff;
+  --color-surface-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-high: #dce9ff;
+  --color-surface-highest: #d3e4fe;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #434655;
+  --color-outline: #747686;
+  --color-outline-variant: #c4c5d7;
+
+  --color-primary: #1d4ed8;
+  --color-primary-deep: #0037b0;
+  --color-secondary: #0ea5e9;
+  --color-tertiary: #10b981;
+  --color-amber-accent: #f59e0b;
+  --color-error-accent: #ef4444;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #f8f9ff;
+    color: #0b1c30;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4 {
+    letter-spacing: -0.015em;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.card-level-1 {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+}
+
+.card-level-2 {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 8px 24px -4px rgba(29, 78, 216, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+}
+
+.sheet-level-3 {
+  background-color: #ffffff;
+  box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.14);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
